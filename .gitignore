@@ -18,6 +18,6 @@ firmware/nand/
 reverse_engineering/
 logs/
 artifacts/
+publish/
 .dashboard_heartbeat/
 .claude/
-
