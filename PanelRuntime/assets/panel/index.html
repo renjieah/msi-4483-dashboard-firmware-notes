@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=480, initial-scale=1">
+  <title>MSI Panel</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <main class="panel">
+    <section class="topbar">
+      <button id="backButton" class="backButton" type="button" aria-label="Back" hidden>&lt;</button>
+      <div class="titleGroup">
+        <div id="pageKicker" class="kicker"></div>
+        <h1 id="pageTitle">MSI GODLIKE</h1>
+      </div>
+    </section>
+
+    <section id="homeView" class="homeView">
+      <section class="summaryGrid">
+        <article class="summaryCard meterCard accent-green interactive" data-page="cpu">
+          <div class="cardHead">
+            <span>CPU Temp</span>
+            <b id="cpuLoad">--</b>
+          </div>
+          <strong id="cpuTemp" class="summaryValue">--</strong>
+          <div class="summaryMeta">
+            <span id="cpuClock">--</span>
+            <span id="cpuPower">--</span>
+          </div>
+          <canvas class="sparkline" id="cpuTempSpark" width="200" height="46"></canvas>
+        </article>
+
+        <article class="summaryCard meterCard accent-blue interactive" data-page="gpu">
+          <div class="cardHead">
+            <span>GPU Temp</span>
+            <b id="gpuLoad">--</b>
+          </div>
+          <strong id="gpuTemp" class="summaryValue">--</strong>
+          <div class="summaryMeta">
+            <span id="gpuClockHome">--</span>
+            <span id="gpuPowerHome">--</span>
+          </div>
+          <canvas class="sparkline" id="gpuTempSpark" width="200" height="46"></canvas>
+        </article>
+      </section>
+
+      <section class="stripCard coolingStrip meterCard accent-amber interactive" data-page="cooling">
+        <div class="cardHead">
+          <span>Cooling</span>
+        </div>
+        <div class="stripValues compactTwo">
+          <span>Rad <b id="caseFan">--</b></span>
+          <span>Pump <b id="pumpHome">--</b></span>
+        </div>
+      </section>
+
+      <section class="secondaryGrid">
+        <article class="infoCard meterCard accent-pink interactive" data-page="memory">
+          <div class="cardHead">
+            <span>RAM</span>
+            <b id="memory">--</b>
+          </div>
+          <strong id="memoryUsed">--</strong>
+          <div class="summaryMeta">
+            <span id="memoryTotal">--</span>
+            <span id="memorySpeed">--</span>
+          </div>
+        </article>
+
+        <article class="infoCard meterCard accent-green interactive" data-page="network">
+          <div class="cardHead">
+            <span id="networkName">Network</span>
+            <b id="networkLink">--</b>
+          </div>
+          <div id="network" class="networkValue">
+            <div class="netRow"><span class="netArrow rxArrow">↓</span><b id="networkRx">--</b></div>
+            <div class="netRow"><span class="netArrow txArrow">↑</span><b id="networkTx">--</b></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="stripCard boardStrip meterCard accent-blue interactive" data-page="board">
+        <div class="cardHead">
+          <span>Storage</span>
+          <b id="storageUsage">--</b>
+        </div>
+        <div class="stripValues">
+          <span>Disk <b id="storageModel">--</b></span>
+          <span>Temp <b id="storageTemp">--</b></span>
+          <span>Free <b id="storageFree">--</b></span>
+        </div>
+      </section>
+
+      <footer>
+        <span id="sensorCount">0 sensors</span>
+        <div class="footerRight">
+          <span id="updated">--</span>
+          <button class="themeToggle" type="button" aria-label="Toggle theme">A</button>
+        </div>
+      </footer>
+    </section>
+
+    <section id="detailView" class="detailView" hidden>
+      <section class="detailHero">
+        <span id="detailSubtitle">--</span>
+        <strong id="detailPrimary">--</strong>
+        <div id="detailPrimaryLabel" class="detailPrimaryLabel">--</div>
+      </section>
+
+      <section id="detailMetrics" class="detailMetrics"></section>
+      <section id="detailList" class="detailList"></section>
+
+      <footer>
+        <span id="detailFooterLeft">--</span>
+        <div class="footerRight">
+          <span id="detailUpdated">--</span>
+          <button class="themeToggle" type="button" aria-label="Toggle theme">A</button>
+        </div>
+      </footer>
+    </section>
+  </main>
+  <script src="panel.js"></script>
+</body>
+</html>

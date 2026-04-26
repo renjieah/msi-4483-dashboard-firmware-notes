@@ -1,0 +1,23 @@
+bin/
+obj/
+*.user
+*.suo
+*.pyc
+__pycache__/
+*.log
+
+# WebView2 runtime profile/cache
+*.WebView2/
+**/*.WebView2/
+EBWebView/
+
+# Local/private firmware and large reverse-engineering artifacts
+firmware/original/
+firmware/archive/
+firmware/nand/
+reverse_engineering/
+logs/
+artifacts/
+.dashboard_heartbeat/
+.claude/
+
