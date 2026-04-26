@@ -1,3 +1,4 @@
+496700DA04E24B419D158D27583CC60AC4C518563D0D0D6611B3F35A286E7D4E  NANDFAT_4BB6_22092000.bin  NAND/resource package used by the updater
 46D569957B662AF6129BEA8C7E8D7A5AC0C668A965DBA3F6663D9ACB7DBD4307  conprog_4BB6_22100300_bugfix_only.bin  only fixes loading loop and slot8/slot9 overlap bugs
 6AA5375F21D1E921A964740E5769957CFB0DB022E4DBED5CBC437EF7220D4C92  conprog_4BB6_22100300_v72_vpe_breathe_full_cave.bin  tested baseline, passed 8h 5fps hardware run
 34F53DC2645FBDDB1B127CDB9CB904E9B7B3D5C1E32542BE1A96B69B6E9B1B69  conprog_4BB6_22100300_v73_vpe_scratch_breathe.bin  candidate, offline self-check passed, not fully hardware-tested
