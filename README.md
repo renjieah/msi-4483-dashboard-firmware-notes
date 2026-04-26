@@ -64,10 +64,10 @@
 
 ### 固件状态
 
-- `NANDFAT_4BB6_22092000.bin`: 更新工具使用的 NAND/resource package。
-- `bugfix-only`: 只包含 loading 死循环和 slot 8/slot 9 叠加闪烁修复，不包含自定义显示通道。
-- `v72`: 当前较稳定基线，做过 5fps 连续 8 小时实机测试。
-- `v73`: 后续候选版本，离线自检通过，但尚未完整实机验证。
+- Release 里提供 3 个刷机包。每个包都包含刷机工具、`MsiHid.dll`、`NANDFAT_4BB6_22092000.bin` 和对应的 `conprog_4BB6_22100300.bin`。
+- `bugfix-only` 包：只包含 loading 死循环和 slot 8/slot 9 叠加闪烁修复，不包含自定义显示通道。
+- `v72` 包：当前较稳定自定义显示基线，做过 5fps 连续 8 小时实机测试。
+- `v73` 包：后续候选版本，离线自检通过，但尚未完整实机验证。
 
 建议源码仓库只记录 hash。固件二进制如果公开，建议放 GitHub Release，不直接提交到 git 历史。
 
@@ -136,10 +136,10 @@ When running `PanelRuntime`, it is recommended to stop MSI Dashboard / MSI Cente
 
 ### Firmware Status
 
-- `NANDFAT_4BB6_22092000.bin`: NAND/resource package used by the updater.
-- `bugfix-only`: fixes only the loading loop and slot 8/slot 9 overlap bugs. It does not include the custom display path.
-- `v72`: current tested baseline, passed an 8-hour 5fps hardware run.
-- `v73`: later candidate, offline self-check passed, not fully hardware-validated yet.
+- The Release page provides 3 flash packages. Each package contains the updater, `MsiHid.dll`, `NANDFAT_4BB6_22092000.bin`, and the matching `conprog_4BB6_22100300.bin`.
+- `bugfix-only` package: fixes only the loading loop and slot 8/slot 9 overlap bugs. It does not include the custom display path.
+- `v72` package: current custom display baseline, passed an 8-hour 5fps hardware run.
+- `v73` package: later candidate, offline self-check passed, not fully hardware-validated yet.
 
 The git repository should store hashes and notes. If firmware binaries are published, GitHub Releases are preferred over committing binaries into git history.
 
