@@ -62,6 +62,7 @@
 
 ### 固件状态
 
+- `bugfix-only`: 只包含 loading 死循环和 slot 8/slot 9 叠加闪烁修复，不包含自定义显示通道。
 - `v72`: 当前较稳定基线，做过 5fps 连续 8 小时实机测试。
 - `v73`: 后续候选版本，离线自检通过，但尚未完整实机验证。
 
@@ -130,6 +131,7 @@ The UI is plain HTML/CSS/JS. Even after packaging, the web assets can remain exp
 
 ### Firmware Status
 
+- `bugfix-only`: fixes only the loading loop and slot 8/slot 9 overlap bugs. It does not include the custom display path.
 - `v72`: current tested baseline, passed an 8-hour 5fps hardware run.
 - `v73`: later candidate, offline self-check passed, not fully hardware-validated yet.
 
