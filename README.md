@@ -60,6 +60,8 @@
 
 因为界面是普通 HTML/CSS/JS，即使程序打包后，网页资源也可以暴露出来直接修改。现在有 AI 辅助，改主题、换布局、加页面、删模块的门槛比以前低很多。
 
+运行 `PanelRuntime` 时，建议先关闭 MSI Dashboard / MSI Center 中和小屏相关的服务或后台进程。原厂程序也会访问同一个 USB HID 设备，如果两个程序同时抢设备，可能会导致卡顿、闪烁、画面跳回原厂页面或连接不稳定。
+
 ### 固件状态
 
 - `bugfix-only`: 只包含 loading 死循环和 slot 8/slot 9 叠加闪烁修复，不包含自定义显示通道。
@@ -128,6 +130,8 @@ It can be used to:
 - Run at low FPS when idle and increase FPS during interaction.
 
 The UI is plain HTML/CSS/JS. Even after packaging, the web assets can remain exposed and easy to edit. With AI assistance, changing themes, layouts, pages, and widgets becomes much easier than editing firmware directly.
+
+When running `PanelRuntime`, it is recommended to stop MSI Dashboard / MSI Center services or background processes related to the panel first. The stock MSI software can access the same USB HID device; if both apps compete for it, the result may be stutter, flicker, jumps back to stock pages, or unstable connection.
 
 ### Firmware Status
 
